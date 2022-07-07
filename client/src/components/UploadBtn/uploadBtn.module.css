@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Dosis:wght@700&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.pageMenuOpen {
+  width: calc(100vw - 180px);
+  min-height: 100vh;
+  background-color: #152129;
+  align-self: flex-end;
+}
+
+.pageMenuClosed {
+  width: calc(100vw - 60px);
+  min-height: 100vh;
+  background-color: #152129;
+  align-self: flex-end;
+}
+
+.uploadWrapper {
+  margin-top: 40px;
+  padding: 0 50px;
+  color: #f0f6f6;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.uploadWrapper h1 {
+  font-family: "Barlow", sans-serif;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.formDiv {
+  display: flex;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.uploadDiv {
+  width: 640px;
+  height: 480px;
+  border: 2px dashed #293841;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.uploadDiv:hover {
+  border: 2px dashed #9764ff;
+  background-color: #293841;
+}
+
+.uploadedImage {
+  position: absolute;
+  width: 101%;
+  height: 101.5%;
+  object-fit: cover;
+  border-radius: 10px;
+  top: -2px;
+}
+
+.defaultUploadImage {
+  width: 70px;
+  margin-bottom: 40px;
+}
+
+.uploadDivText {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 3px;
+}
+
+.uploadDivSmallText {
+  font-size: 13px;
+  font-weight: 200;
+}
+
+.displayNone {
+  display: none;
+}
+
+.rightSideDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  margin-left: 100px;
+  transition: all 0.2 ease;
+}
+
+.description {
+  height: 100px;
+  background-color: #293841;
+  color: #f0f6f6;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  resize: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 200;
+  border: 2px solid transparent;
+  transition: all 0.2s ease-out;
+}
+
+.description:hover,
+.description:focus {
+  border: 2px solid #9764ff;
+}
+
+.buttonsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trashCan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #293841;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.trashCan:hover {
+  border: 2px solid #9764ff;
+}
+
+.trashCanImg {
+  width: 15px;
+}
+
+.submitButton {
+  background-color: #8447ff;
+  color: #f0f6f6;
+  cursor: pointer;
+  border: 2px solid transparent;
+  height: 45px;
+  width: 80%;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 100px;
+  transition: all 0.2s ease;
+}
+
+.submitButton:hover {
+  border: 2px solid #9764ff;
+  background-color: #9764ff;
+}

@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.sideMenuOpen {
+  width: 180px;
+  height: 100vh;
+  position: fixed;
+  background-color: #101a20;
+  color: #f0f6f6;
+  flex-shrink: 0;
+  transition: all 0.1s ease;
+}
+
+.sideMenuClosed {
+  width: 60px;
+  height: 100vh;
+  position: fixed;
+  background-color: #101a20;
+  transition: all 0.1s ease;
+  color: #f0f6f6;
+}
+
+.links {
+  text-decoration: none;
+  color: #f0f6f6;
+}
+
+.leftSideLinks {
+  width: 100%;
+  height: 25%;
+}
+
+.logo {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.logoImg {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.logoText {
+  font-family: "Dosis", sans-serif;
+  font-size: 35px;
+  top: 2px;
+  left: 55px;
+  position: absolute;
+}
+
+.logoTextNone {
+  display: none;
+}
+
+.menuButton {
+  width: 20px;
+  height: 12px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menuButtonLine {
+  width: 100%;
+  height: 19%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuButtonBar {
+  width: 80%;
+  height: 100%;
+  background-color: #f0f6f6;
+  border-radius: 100px;
+}
+
+.menuButtonDot {
+  width: 13%;
+  height: 100%;
+  background-color: #f0f6f6;
+  border-radius: 100px;
+}
+
+.menuButtonDotNone {
+  background-color: #101a20;
+}
+
+.sideMenuLinks {
+  position: absolute;
+  top: 35%;
+  left: -40px;
+  height: 200px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.listLine {
+  height: 100%;
+  padding-left: 20px;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.activeMark {
+  width: 3px;
+  height: 80%;
+  background-color: #8447ff;
+  position: absolute;
+  left: 0px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.listLine:hover .activeMark {
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+.showActiveMark {
+  width: 3px;
+  height: 80%;
+  background-color: #8447ff;
+  position: absolute;
+  left: 0px;
+  border-radius: 10px;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+.listLineImg {
+  width: 18px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.notificationNumber {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  border: 2px solid #101a20;
+  border-radius: 50%;
+  background-color: #8447ff;
+  font-size: 10px;
+  left: 34px;
+  top: 14px;
+}
+
+.listLineText {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.displayNone {
+  display: none;
+}
+
+.tooltip {
+  display: none;
+  background-color: #101a20;
+  font-size: 11px;
+  padding: 8px 12px;
+  position: absolute;
+  left: 67px;
+  border-radius: 3px;
+  font-weight: 200;
+}
+
+.listLine:hover .tooltip {
+  display: flex;
+  align-items: center;
+}
+
+.tooltipArrow {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid #101a20;
+  position: absolute;
+  left: -7px;
+}

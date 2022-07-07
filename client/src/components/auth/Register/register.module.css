@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Dosis:wght@700&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.registerContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  background-color: #152129;
+  color: #f0f6f6;
+}
+
+.rightSide {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+.registerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.5) -10px 7px 29px 0px;
+}
+
+.leftSide {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

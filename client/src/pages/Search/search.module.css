@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Dosis:wght@700&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+.searchContainer {
+  display: flex;
+  width: 100%;
+  background-color: #101a20;
+  padding: 0;
+  margin: 0;
+}
+
+.rightSideContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchOpen {
+  width: calc(100vw - 180px);
+  background-color: #152129;
+  align-self: flex-end;
+}
+
+.searchClosed {
+  width: calc(100vw - 60px);
+  background-color: #152129;
+  align-self: flex-end;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.searchInput {
+  background-color: #293841;
+  width: 100%;
+  height: 50px;
+  color: #f0f6f6;
+  border-radius: 10px;
+  font-size: 15px;
+  border: 2px solid transparent;
+  transition: all 0.2s ease-out;
+  margin: 0;
+}
+
+.searchInput:hover {
+  border: 2px solid #9764ff;
+  transition: all 0.2s ease-out;
+}
+
+.searchInput:focus {
+  outline: none;
+  border: 2px solid #9764ff;
+}
+
+.searchImg {
+  width: 18px;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 20px;
+}
+
+.searchUserWrapper {
+  padding: 0 50px 0 50px;
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.userDiv {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 10px;
+  border: 2px solid #293841;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.2s ease-out;
+}
+
+.userDiv:hover {
+  border: 2px solid #9764ff;
+}
+
+.userProfilePictureDiv {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.userProfilePicture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.userName {
+  color: #f0f6f6;
+  font-family: "Barlow", sans-serif;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.userOccupation {
+  color: #8447ff;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.searchTitle {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 50px;
+  color: #f0f6f6;
+  margin-bottom: 20px;
+}

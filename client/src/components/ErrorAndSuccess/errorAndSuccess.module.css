@@ -1,0 +1,25 @@
+.error {
+  padding: 20px 0;
+  font-weight: 700;
+  color: #fa465e;
+  transition: opacity 0.2s ease;
+  opacity: 1;
+  visibility: visible;
+  text-align: center;
+}
+
+.success {
+  padding: 20px 0;
+  font-weight: 700;
+  color: #76fc91;
+  transition: opacity 0.2s ease;
+  opacity: 1;
+  visibility: visible;
+  margin-left: 30%;
+  text-align: center;
+}
+
+.errorDisplayNone {
+  opacity: 0;
+  visibility: hidden;
+}

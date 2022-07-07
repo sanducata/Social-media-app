@@ -1,0 +1,13 @@
+.messagesContainer {
+  display: flex;
+  width: 100%;
+  background-color: #101a20;
+  padding: 0;
+  margin: 0;
+}
+
+.rightSideContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}

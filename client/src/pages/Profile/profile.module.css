@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Dosis:wght@700&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.profileContainer {
+  display: flex;
+  width: 100%;
+  background-color: #101a20;
+  padding: 0;
+  margin: 0;
+}
+
+.rightSideContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.collectionTitleOpen {
+  width: calc(100vw - 180px);
+
+  background-color: #152129;
+  align-self: flex-end;
+}
+
+.collectionTitleClosed {
+  width: calc(100vw - 60px);
+  background-color: #152129;
+  align-self: flex-end;
+}
+
+.wrapper {
+  padding-top: 40px;
+  display: flex;
+  align-self: flex-end;
+  padding-left: 50px;
+  font-family: "Barlow", sans-serif;
+  font-size: 30px;
+  color: #f0f6f6;
+}
+
+.wrapper span {
+  font-family: "Barlow", sans-serif;
+  font-size: 30px;
+  color: #8447ff;
+}

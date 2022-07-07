@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+a {
+  color: #f0f6f6;
+  text-decoration: none;
+}
+
+.aboutOpen {
+  width: calc(100vw - 180px);
+  min-height: calc(100vh - 395px);
+  background-color: #152129;
+  align-self: flex-end;
+  color: #f0f6f6;
+}
+
+.aboutClosed {
+  width: calc(100vw - 60px);
+  min-height: calc(100vh - 395px);
+  background-color: #152129;
+  align-self: flex-end;
+  color: #f0f6f6;
+}
+
+.aboutWrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 200px;
+}
+
+.sideWrapper {
+  width: 46%;
+}
+
+.followingsDiv {
+  display: flex;
+  padding: 0 0 30px 30px;
+}
+
+.followSpan {
+  font-weight: 200;
+  margin-right: 20px;
+}
+
+.followNumber {
+  color: #8447ff;
+  font-weight: 800;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #293841;
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+}
+
+.sectionTitle {
+  font-family: "Barlow", sans-serif;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.sectionContent {
+  font-weight: 300;
+  margin-bottom: 3px;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.socialMediaIcon {
+  width: 17px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.socialMedia .sectionContent {
+  font-weight: 200;
+  font-size: 16px;
+  margin: 0;
+  transition: color 0.2s ease-out;
+}
+
+.socialMedia:hover .sectionContent {
+  color: #8447ff;
+}

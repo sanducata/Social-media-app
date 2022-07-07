@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.profileInfoContainerOpen {
+  width: calc(100vw - 180px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  background-color: #152129;
+  padding: 40px 0 0 0;
+  color: #f0f6f6;
+}
+
+.profileInfoContainerClosed {
+  width: calc(100vw - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  padding: 40px 0 0 0;
+  background-color: #152129;
+  color: #f0f6f6;
+}
+
+.profilePictureDiv {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.profilePicture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.userInfo {
+  color: #f0f6f6;
+  text-align: center;
+  font-size: 17px;
+}
+
+.userInfo p:nth-child(1) {
+  font-family: "Barlow", sans-serif;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.userInfo p:nth-child(2) {
+  color: #8447ff;
+  margin-bottom: 20px;
+}
+
+.profileLinks {
+  width: 35%;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  list-style: none;
+}
+
+.profileLink {
+  font-weight: 400;
+  font-size: 18px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.2s ease-out;
+}
+
+.profileLinkActive {
+  color: #8447ff;
+}
+
+.profileLink:hover {
+  color: #8447ff;
+}
+
+.links {
+  text-decoration: none;
+  color: #f0f6f6;
+}
+
+.followAndMessageButton {
+  display: flex;
+}
+
+.followButton {
+  background-color: #8447ff;
+  height: 30px;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  color: #f0f6f6;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  border-radius: 100px;
+}
+
+.followButton:hover {
+  background-color: #9764ff;
+  border: 2px solid #9764ff;
+}
+
+.unfollowButton {
+  border: 2px solid #293841;
+  height: 30px;
+  width: 110px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f0f6f6;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 100px;
+}
+
+.unfollowButton:hover {
+  border: 2px solid #9764ff;
+}
+
+.overlay {
+  position: fixed;
+  background: rgba(21, 33, 41, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.sendMessageDiv {
+  width: 40%;
+  position: absolute;
+  height: 50%;
+  left: 30%;
+  top: 15%;
+
+  background-color: #152129;
+  border: 2px solid #293841;
+  border-radius: 10px;
+}
+
+.sendMessageTop {
+  display: flex;
+  align-items: center;
+  width: 80%;
+
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.sendMessagePicture {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.sendMessageTitle {
+  font-family: "Barlow", sans-serif;
+  font-size: 30px;
+}
+
+.sendMessageTitle span {
+  font-family: "Barlow", sans-serif;
+  font-size: 30px;
+  color: #8447ff;
+}
+
+.textareaForm {
+  width: 80%;
+  height: 50%;
+  margin: 30px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.messageTextarea {
+  width: calc(100% - 22px);
+  height: 100%;
+  background-color: #293841;
+  color: #f0f6f6;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  resize: none;
+  outline: none;
+  border: 2px solid transparent;
+  font-size: 14px;
+  font-weight: 200;
+  transition: border 0.2s ease-out;
+}
+
+.messageTextarea:hover,
+.messageTextarea:focus {
+  border: 2px solid #9764ff;
+}
+
+.sendMessage {
+  background-color: #8447ff;
+  cursor: pointer;
+  width: 20%;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 100px;
+  color: #f0f6f6;
+  transition: background-color 0.2s ease-out;
+}
+
+.sendMessage:hover {
+  background-color: #9764ff;
+}

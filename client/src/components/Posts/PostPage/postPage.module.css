@@ -1,0 +1,631 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Dosis:wght@700&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.overlay {
+  position: fixed;
+  background: rgba(21, 33, 41, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.postPageContainer {
+  width: 97%;
+  position: absolute;
+  height: 96%;
+  left: 1.5%;
+  top: 2%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #152129;
+  border: 2px solid #293841;
+  color: #f0f6f6;
+  border-radius: 10px;
+}
+
+.closeBtn {
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 200;
+  border-radius: 100px;
+  border: 2px solid #293841;
+  transition: border 0.2s ease-out;
+}
+
+.closeBtn:hover {
+  border: 2px solid #9764ff;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+}
+
+.side:nth-child(1) {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 65%;
+  overflow-y: auto;
+  border-right: 2px solid #293841;
+}
+
+.side:nth-child(1)::-webkit-scrollbar {
+  width: 8px;
+}
+
+.side:nth-child(1)::-webkit-scrollbar-track-piece:start {
+  margin-top: 110px;
+}
+
+.side:nth-child(1)::-webkit-scrollbar-thumb {
+  border-right: 3px solid #152129;
+}
+
+.side:nth-child(2) {
+  padding-right: 5%;
+  padding-left: 30px;
+  width: 20%;
+}
+
+.postTitleDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.titleDivSide:nth-child(1) {
+  display: flex;
+  width: 75%;
+  align-items: center;
+}
+
+.titleDivSide:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+
+.userProfilePicDiv {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.userProfilePic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.titleAndName {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.postTitle {
+  font-family: "Barlow", sans-serif;
+  font-size: 25px;
+  justify-self: flex-start;
+}
+
+.userName {
+  font-weight: 400;
+  font-size: 16px;
+  transition: color 0.2s ease-out;
+}
+
+.userName:hover {
+  color: #9764ff;
+}
+
+.iconWrapper {
+  padding: 0 25px;
+  display: flex;
+  height: 50px;
+  border: 2px solid #293841;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: border 0.2s ease-out;
+}
+
+.iconWrapper:hover {
+  border: 2px solid #9764ff;
+}
+
+.iconWrapperColor {
+  border: 2px solid #9764ff;
+}
+
+.likeAndSaveImg {
+  width: 20px;
+}
+
+.edit {
+  align-self: flex-end;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.edit div {
+  display: flex;
+  align-items: center;
+}
+
+.edit div span {
+  font-size: 14px;
+  font-weight: 300;
+  transition: color 0.2s ease-out;
+}
+
+.edit:hover div span {
+  color: #9764ff;
+}
+
+.editIcon {
+  width: 20px;
+  margin-left: 5px;
+}
+
+.imageDiv {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.imageDiv img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.description {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 2px solid #293841;
+  padding-top: 15px;
+}
+
+.tag {
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: 200;
+  border: 2px solid #293841;
+  border-radius: 100px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: border 0.2s ease-out;
+}
+
+.tag:hover {
+  border: 2px solid #9764ff;
+}
+
+.commentsDiv {
+  width: 100%;
+  height: 100%;
+}
+
+.textareaForm {
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  transition: border 0.2s ease-out;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.textareaForm:hover,
+.textareaForm:focus {
+  border: 2px solid #9764ff;
+}
+
+.commentsTextarea {
+  width: 90%;
+  height: 60px;
+  background-color: #293841;
+  color: #f0f6f6;
+  padding: 10px 5%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  resize: none;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 200;
+  transition: height 0.2s ease-out;
+}
+
+.commentsTextarea::-webkit-scrollbar-track {
+  margin-top: 8px;
+  background-color: #293841;
+}
+
+.commentsTextarea::-webkit-scrollbar-thumb {
+  background-color: #152129;
+  border: 3px solid #293841;
+}
+
+.commentsTextareaCollapsed {
+  width: 90%;
+  height: 15px;
+  background-color: #293841;
+  color: #f0f6f6;
+  padding: 10px 5%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  resize: none;
+  outline: none;
+  border: none;
+  overflow-y: hidden;
+  font-size: 14px;
+  font-weight: 200;
+  transition: height 0.2s ease-out;
+}
+
+.sendButtonDiv {
+  width: 100%;
+  position: relative;
+  background-color: #293841;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: text;
+}
+
+.sendComment {
+  background-color: #293841;
+  color: #f0f6f6;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 10px;
+  font-weight: 200;
+  border-radius: 100px;
+  border: 2px solid #152129;
+  cursor: pointer;
+  transition: border 0.2s ease-out;
+}
+
+.sendComment:hover {
+  border: 2px solid #9764ff;
+}
+
+.sendCommentDisabled {
+  opacity: 0;
+  background-color: #293841;
+  color: #152129;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 10px;
+  font-weight: 800;
+  border-radius: 100px;
+  border: 2px solid #152129;
+}
+
+.allComments {
+  max-height: 70%;
+  width: 90%;
+  padding: 5%;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 200;
+  overflow-y: auto;
+  overflow-x: hidden;
+  list-style: none;
+  border: 2px solid #293841;
+  border-radius: 10px;
+}
+
+.allComments::-webkit-scrollbar {
+  width: 10px;
+}
+
+.allComments::-webkit-scrollbar-track {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-right: 5px;
+}
+
+.allComments::-webkit-scrollbar-thumb {
+  border: 3px solid #152129;
+}
+
+.comment {
+  overflow-wrap: break-word;
+  margin-bottom: 15px;
+}
+
+.commentContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.commentUser {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.commentUserPic {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.commentUserProfilePic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.commentUserName {
+  font-weight: 500;
+  transition: color 0.2s ease-out;
+}
+
+.commentUserName:hover {
+  color: #9764ff;
+}
+
+.noCommentsDiv {
+  padding: 30px 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.noCommentsText {
+  font-weight: 300;
+  width: 90%;
+  font-size: 16px;
+  text-align: center;
+}
+
+.noCommentsIcon {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.commentText {
+  margin-left: 40px;
+}
+
+.timeAgoDiv {
+  display: flex;
+  font-size: 12px;
+  font-weight: 100;
+  color: #c5cccc;
+  margin-left: 40px;
+  align-items: center;
+}
+
+.timeAgo {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.deleteComment:hover {
+  color: #fa465e;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.addToCollectionDiv {
+  background-color: #152129;
+  border: 2px solid #293841;
+  width: 30%;
+  position: absolute;
+  height: 60%;
+  left: 35%;
+  top: 20%;
+  display: flex;
+  justify-content: space-between;
+  color: #f0f6f6;
+  border-radius: 10px;
+}
+
+.collectionsDiv {
+  width: 100%;
+  height: calc(100% - 15px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0 0 0;
+  position: relative;
+}
+
+.noCollectionsDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.collectionsText {
+  font-weight: 300;
+
+  margin-bottom: 10px;
+}
+
+.collectionsDiv .createCollectionDiv {
+  position: absolute;
+  padding: 15px 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.allCollections {
+  width: 100%;
+  height: 60%;
+  padding: 10px 0;
+  border-top: 2px solid #293841;
+  border-bottom: 2px solid #293841;
+  overflow-y: scroll;
+}
+
+.allCollections::-webkit-scrollbar-thumb {
+  border: 3px solid #152129;
+}
+
+.inputAndButton {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.createCollectionDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.createCollectionButton {
+  background-color: #8447ff;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  border-radius: 100px;
+}
+
+.createCollectionButton:hover {
+  background-color: #9764ff;
+  border: 2px solid #9764ff;
+}
+
+.newCollectionInput {
+  width: 45%;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.collection {
+  width: 90%;
+  padding: 10px 5%;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.collection:hover {
+  background-color: #293841;
+}
+
+.collectionImageDiv {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.collectionImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.collectionTitle {
+  font-weight: 200;
+}
+
+.saveButton {
+  background-color: #8447ff;
+  height: 30px;
+  padding: 0 15px;
+  position: absolute;
+  right: 5%;
+  top: calc(50% - 15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f0f6f6;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s ease-out;
+  border: 2px solid transparent;
+  border-radius: 100px;
+  opacity: 0;
+}
+
+.collection:hover .saveButton {
+  opacity: 1;
+}
+
+.saveButton:hover {
+  border: 2px solid #9764ff;
+  background-color: #9764ff;
+}
+
+.activeMark {
+  width: 3px;
+  height: 80%;
+  background-color: #8447ff;
+  position: absolute;
+  left: 0px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.showActiveMark {
+  width: 3px;
+  height: 80%;
+  background-color: #8447ff;
+  position: absolute;
+  left: 0px;
+  border-radius: 10px;
+  opacity: 1;
+  transition: all 0.2s ease;
+}

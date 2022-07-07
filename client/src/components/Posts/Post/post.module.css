@@ -1,0 +1,104 @@
+.postContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.postTop {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.postImg {
+  width: 100%;
+  border-radius: 10px;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.postOverlay {
+  height: 30%;
+  padding: 0 20px 30px 20px;
+  position: absolute;
+  border-radius: 0 0 10px 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(21, 33, 41);
+  background: linear-gradient(
+    0deg,
+    rgba(21, 33, 41, 0.8746849081429446) 0%,
+    rgba(21, 33, 41, 0) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+.postTop:hover .postOverlay {
+  display: flex;
+  opacity: 1;
+  transition: opacity 0.2s ease-out;
+}
+
+.postOverlayText {
+  color: #f0f6f6;
+  font-weight: 600;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.postBottom {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #f0f6f6;
+}
+
+.postBottomLeft {
+  display: flex;
+  align-items: center;
+}
+
+.postBottomLeftImgBox {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.postBottomLeftImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.postBottomLeftName {
+  font-size: 14px;
+}
+
+.postBottomRight {
+  display: flex;
+  align-items: center;
+}
+
+.postBottomRightDiv {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.postBottomRightIcon {
+  width: 17px;
+  cursor: pointer;
+}
+
+.postBottomRightText {
+  font-size: 13px;
+  margin-left: 4px;
+  font-weight: 200;
+}

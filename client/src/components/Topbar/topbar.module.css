@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+.visibilityHidden {
+  visibility: hidden;
+}
+
+.topbarOpen {
+  width: calc(100vw - 180px);
+  height: 60px;
+  background-color: #152129;
+  color: #f0f6f6;
+  align-self: flex-end;
+}
+
+.topbarClosed {
+  width: calc(100vw - 60px);
+  height: 60px;
+  background-color: #152129;
+  color: #f0f6f6;
+  align-self: flex-end;
+}
+
+.topbarWrapper {
+  padding: 0 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.dropdownContent {
+  height: 78px;
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #152129;
+  width: 100%;
+  padding: 8px 0;
+  z-index: 1;
+  border: 1px solid #293841;
+  border-radius: 5px;
+}
+
+.dropdownContentNone {
+  display: none;
+}
+
+.dropdownListItem {
+  padding: 10px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdownListItem:hover {
+  background-color: #293841;
+}
+
+.dropdownProfile {
+  position: relative;
+  height: 100%;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.dropbtnProfile {
+  background-color: #293841;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border: 2px solid #293841;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-out;
+}
+
+.dropdownContentProfile {
+  display: none;
+}
+
+.dropdownProfile:hover .dropbtnProfile {
+  border: 2px solid #9764ff;
+}
+
+.dropdownProfile:hover .dropdownContentProfile {
+  display: block;
+  height: 160px;
+  width: 150px;
+  position: absolute;
+  top: 60px;
+  left: -130%;
+  background-color: #152129;
+  padding: 8px 0;
+  z-index: 1;
+  border: 1px solid #293841;
+  border-radius: 5px;
+}
+
+.profileImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.noProfileImg {
+  margin: 0 auto;
+}
+
+.uploadButton {
+  background-color: #8447ff;
+  height: 30px;
+  width: 110px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f0f6f6;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  border-radius: 100px;
+}
+
+.uploadButton:hover {
+  background-color: #9764ff;
+  border: 2px solid #9764ff;
+}
+
+.uploadButtonImg {
+  margin-right: 10px;
+}
+
+.links {
+  text-decoration: none;
+  color: #f0f6f6;
+}
+
+.loginButton {
+  height: 30px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  color: #f0f6f6;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.loginButton:hover {
+  color: #9764ff;
+}
+
+.registerButton {
+  background-color: #8447ff;
+  height: 30px;
+  margin-left: 20px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  color: #f0f6f6;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  border-radius: 100px;
+}
+
+.registerButton:hover {
+  background-color: #9764ff;
+  border: 2px solid #9764ff;
+}
